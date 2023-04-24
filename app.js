@@ -27,6 +27,7 @@ const {config} = require('dotenv');
 config();
 
 
+
 app.use(express.static("uploads"));
 app.use(express.static("registrationproof"));
 app.use(bodyParser.json())
@@ -548,6 +549,7 @@ app.post('/create-checkout-session', async (req, res) => {
 
   const AdminRoute=require("./routes/adminRoutes");
 const { map } = require("jquery");
+const review = require("./mongoSchema/reviewschema");
 app.use("/admin", AdminRoute);
 
 
