@@ -229,7 +229,7 @@ app.post('/deleteContact', async (req, res) => {
 app.get("/ngos", async(req, res)=>{
   const pipeline = [{$group:{_id: '$username',doc:{$first: '$$ROOT'} }}];
   let  obj =  await ngoschema.aggregate(pipeline);
-
+//ngos
 
     if(obj!=null)
     {
