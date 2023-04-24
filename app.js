@@ -19,7 +19,6 @@ const db= require("./mongoSchema/database");
 const multer = require("multer");
 const { MongoClient, ServerApiVersion } = require('mongodb');
 
-
 app.use(express.static("uploads"));
 app.use(express.static("registrationproof"));
 app.use(bodyParser.json())
