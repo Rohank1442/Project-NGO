@@ -1,8 +1,4 @@
 const mongoose = require("mongoose");
-
-const { config } = require('dotenv');
-config();
-
  class Database {
     constructor() {
         this.connection();
@@ -11,8 +7,8 @@ config();
     async connection() {
         mongoose.set('strictQuery', false);
         try {
-            // const uri = "";
-            await mongoose.connect(process.env.url);
+            const uri = "mongodb://0.0.0.0:27017/mongopractice";
+            await mongoose.connect(uri);
             console.log("connected to mongodb");
         }
         catch (error) {

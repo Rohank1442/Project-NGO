@@ -19,6 +19,7 @@ const db= require("./mongoSchema/database");
 const multer = require("multer");
 const { MongoClient, ServerApiVersion } = require('mongodb');
 
+
 app.use(express.static("uploads"));
 app.use(express.static("registrationproof"));
 app.use(bodyParser.json())
@@ -37,7 +38,7 @@ app.use(session({
   saveUninitialized: true
 }))
 
-//new
+
 
 //////ngoschema
 
@@ -229,7 +230,7 @@ app.post('/deleteContact', async (req, res) => {
 app.get("/ngos", async(req, res)=>{
   const pipeline = [{$group:{_id: '$username',doc:{$first: '$$ROOT'} }}];
   let  obj =  await ngoschema.aggregate(pipeline);
-//ngos
+
 
     if(obj!=null)
     {
@@ -333,14 +334,20 @@ app.post('/user',async(req,res)=>{
   
   try{
   
-    const sear = req.body.payload;
+    let sear = req.body.payload;
+    const rating =req.body.payloadr;
+    console.log(rating);
+    if(sear==undefined)
+    {
+      sear='';
+    }
     console.log(sear);
     const pipeline = [
       { $match : {username:new RegExp(`^${sear}`,"i")} },
       {$group:{_id: '$username',doc:{$first: '$$ROOT'} }}];
     let  obj =  await ngoschema.aggregate(pipeline);
-   
-    console.log(obj);
+    
+    
     // obj.forEach(Element=>{
     //   console.log(Element.doc.username);
     // });
@@ -348,7 +355,49 @@ app.post('/user',async(req,res)=>{
     // if(arrofngo.length>0)
     // {
     // res.status(200).render('User',{name:req.session.user.username, email: req.session.user.email,item:obj,length:obj.length,useritem:userobj, reviews: reviewschema,arrofngo:reportschemaobj.ngoname});
-    res.status(200).send({payload: obj});
+    if(rating==undefined)
+    {
+      console.log(obj);
+      res.status(200).send({payload: obj});
+    }
+    else{
+    await reviewschema.find({ rating: rating })
+  .then(reviews => {
+    console.log(reviews);
+      const reviewslist=[];
+      reviews.forEach(Element=>{
+      reviewslist.push(Element.ngoname);
+    })
+    console.log(reviewslist);
+    const result=[];
+    const distinctArr = reviewslist.filter((ob, index, self) =>
+    index === self.findIndex((t) => (
+      t === ob
+    ))
+  );
+  
+console.log(distinctArr);
+
+    // const result = obj.filter(p => reviewslist.includes(p.username));
+    obj.forEach(Element=>{
+      for(i = 0; i<distinctArr.length;i++)
+      {
+        if(Element.doc.username==distinctArr[i])
+        {
+          result.push(Element);
+        }
+      }
+    })
+    // console.log(obj);
+    res.status(200).send({payloadr: result});
+    console.log(result);
+  })
+  .catch(err => {
+    console.log(err);
+  });
+
+    }
+    
     // }
     // else{
     // res.status(200).render('User',{name:req.session.user.username, email: req.session.user.email,item:obj,length:obj.length,useritem:userobj, reviews: reviewschema,arrofngo:arrofngo});
@@ -489,6 +538,7 @@ app.post('/create-checkout-session', async (req, res) => {
 
   const AdminRoute=require("./routes/adminRoutes");
 const { map } = require("jquery");
+const review = require("./mongoSchema/reviewschema");
 app.use("/admin", AdminRoute);
 
 

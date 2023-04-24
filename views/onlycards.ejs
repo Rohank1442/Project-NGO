@@ -12,7 +12,16 @@
                     <i class="fa-solid fa-magnifying-glass searchInputIcon"></i>
                     <input id="search" class="searchInput" type="text" name="q"
                         placeholder='     Search NGO of your choice'  onkeyup="sendData(this)" />
-                </div>
+                        Rating:
+                            <select onchange="searchrating()">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                
+            </div>
             </div>
             <!-- <div class="input-field second-wrap">
                 <button class="btn-search" type="submit">SEARCH</button>
@@ -339,7 +348,68 @@
 </script>
 
 
+<script>
+    async function searchrating(){
+        const searchResults = document.getElementById('searchResults');
+        const content=document.getElementById('content').style.display="none";
+        const selected=document.querySelector('select').value;
+        searchResults.innerHTML='';
+        console.log(selected);
+        await  fetch('/user',{
+             method: 'POST',
+             headers: {'Content-Type': 'application/json'},
+             body: JSON.stringify({payloadr: selected})
+         })   .then((res)=>
+            {
+                
+                 return res.json()
+             })
+         .then((data) => {
+             let payload = data.payloadr;
+       
+             payload.forEach(element => {
 
+                // alert(element.doc.username);
+                 searchResults.innerHTML+= `
+                 <div class="card">
+             <div class="row ">
+                 <div class="col-md-7 px-3">
+                     <div class="card-block px-6">
+                         <h4 class="card-title"> ${element.doc.username} </h4>
+                         <p class="card-text"> ${element.doc.desc} </p>
+                         <br>
+                         <div class="d-flex align-items-center justify-content-between mt-3 pb-3">
+                             <a href="https://www.giveindia.org/" class="readmore">
+                                 <div class="button">Read More <span class="fas fa-arrow-right"></span></div>
+                             </a>
+                             <div class="d-flex align-items-center justify-content-center mt-3 pb-3">
+                                 <div class="button" onclick="window.location.href = '/checkout'">Donate</div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="col-md-5">
+                     <div class="carousel-inner">
+                         <div class="carousel-item active">
+                             <img class=""
+                                 src="${element.doc.image}"
+                                 alt="Give India" style="height: 100%; width: 100%;">
+                         </div>
+                     </div>
+                 </div>
+     
+             </div>
+         </div>
+
+                 `
+                 
+            //    document.getElementById("search").submit();
+             });
+             // console.log(payload);
+         });
+  
+    }
+</script>
 
 <script>
    async function sendData(e){
