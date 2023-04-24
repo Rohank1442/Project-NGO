@@ -1,0 +1,392 @@
+   
+<h3 class="ngoSubHeading">Child WellFare Organizations</h3>
+    <div class="card">
+        <div class="row ">
+            <div class="col-md-7 px-3">
+                <div class="card-block px-6">
+                    <h4 class="card-title">Give India</h4>
+                    <!-- <p class="h-1 mt-4"></p> -->
+                    <p class="card-text">GiveIndia (Give Foundation) exists to alleviate poverty by delivering
+                        impactful social initiatives in India. Established in 2000, GiveIndia enables individuals
+                        and institutions to donate a funds to chosen causes, and delivers programs with high-impact
+                        outcomes across India.GiveIndia brings people and organizations closer to realizing a
+                        poverty-free India.</p>
+                    <br>
+                    <div class="d-flex align-items-center justify-content-between mt-3 pb-3">
+                        <a href="https://www.giveindia.org/" class="readmore">
+                            <div class="button">Read More <span class="fas fa-arrow-right"></span></div>
+                        </a>
+                        <div class="d-flex align-items-center justify-content-center mt-3 pb-3">
+                            <div class="button" onclick="window.location.href = '/checkout'">Donate</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Carousel start -->
+            <div class="col-md-5">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class=""
+                            src="https://cdn.givind.org/static/images/campaign/EldersLivesMatter-cta-image.jpg"
+                            alt="Give India" style="height: 100%; width: 100%;">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- End of carousel -->
+
+
+
+
+
+<!-- carousel 2 -->
+<div class="container py-3 " style="padding-left: 15rem;">
+    <!-- Card Start -->
+    <div class="card">
+        <div class="row ">
+            <div class="col-md-5">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class=""
+                            src="https://shuddhi.org/uploads/3/4/7/9/34791871/ngo-membership-shuddhi-ngo-delhi-india_orig.jpg"
+                            alt="Give India" style="height: 100%; width: 100%;">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-7 px-3">
+                <div class="card-block px-6">
+                    <h4 class="card-title">Shuddhi NGO</h4>
+                    <!-- <p class="h-1 mt-4"></p> -->
+                    <p class="card-text">Shuddhi is a registered NGO working together with Partners & Local
+                        Communities in India & Globally to Improve Environment & Human Well-Being.</p>
+                    <br>
+                    <div class="d-flex align-items-center justify-content-between mt-3 pb-3">
+                        <a href="https://shuddhi.org/" class="readmore">
+                            <div class="button">Read More <span class="fas fa-arrow-right"></span></div>
+                        </a>
+                        <div class="d-flex align-items-center justify-content-center mt-3 pb-3">
+                            <div class="button" onclick="window.location.href = '/checkout'">Donate</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- End of carousel -->
+<!-- card 3 -->
+<div class="container py-3 " style="padding-left: 15rem;">
+    <!-- Card Start -->
+    <div class="card">
+        <div class="row ">
+            <div class="col-md-7 px-3">
+                <div class="card-block px-6">
+                    <h4 class="card-title">Y4D</h4>
+                    <!-- <p class="h-1 mt-4"></p> -->
+                    <p class="card-text">Y4D Foundation is a youth led organization working on empowering the
+                        underprivileged section of our society.Y4D Foundation focused its interventions on issues
+                        concerning youth and children which brought about significant changes in their lives in
+                        terms of education, health, skill, career and sustainable livelihood. Y4D also works on
+                        Environment conservation, women empowerment, Food safety and security.</p>
+                    <br>
+                    <div class="d-flex align-items-center justify-content-between mt-3 pb-3">
+                        <a href="https://y4d.ngo/" class="readmore">
+                            <div class="button">Read More <span class="fas fa-arrow-right"></span></div>
+                        </a>
+                        <div class="d-flex align-items-center justify-content-center mt-3 pb-3">
+                            <div class="button" onclick="window.location.href = '/checkout'">Donate</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Carousel start -->
+            <div class="col-md-5">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="" src="https://y4d.ngo/admin/uploads/projects/Plant.jpeg" alt="Give Indai"
+                            style="height: 100%; width: 100%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- card-4 -->
+<div class="container py-3 " style="padding-left: 15rem;">
+<h3 class="ngoSubHeading">WellFare Organizations for underprivileged</h3>
+
+    <!-- Card Start -->
+    <div class="card">
+        <div class="row ">
+            <div class="col-md-5">
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="" src="https://www.sruti.org.in/wp-content/uploads/2021/05/education-image.jpg"
+                            alt="Give India" style="height: 16rem; width: 100%;">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-7 px-3">
+                <div class="card-block px-6">
+                    <h4 class="card-title">Shruti NGO</h4>
+                    <!-- <p class="h-1 mt-4"></p> -->
+                    <p class="card-text">SRUTI-Society for Rural Urban and Tribal Initiative, established in
+                        1983, is a not-for-profit organization that works towards social change at the grass roots,
+                        across rural and urban India, through its Fellowship Programme. It is committed to
+                        empowering marginalized people to lead a dignified life with access to livelihood,
+                        resources, rights and justice.</p>
+                    <br>
+                    <div class="d-flex align-items-center justify-content-between mt-3 pb-3">
+                        <a href="https://www.sruti.org.in/" class="readmore">
+                            <div class="button">Read More <span class="fas fa-arrow-right"></span></div>
+                        </a>
+                        <div class="d-flex align-items-center justify-content-center mt-3 pb-3">
+                            <div class="button" onclick="window.location.href = '/checkout'">Donate</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- card 5 -->
+
+
+
+<div class="container py-3 " style="padding-left: 15rem;">
+    <!-- Card Start -->
+    <div class="card">
+        <div class="row ">
+
+            <div class="col-md-7 px-3">
+                <div class="card-block px-6">
+                    <h4 class="card-title">Akshaya Patra</h4>
+                    <!-- <p class="h-1 mt-4"></p> -->
+                    <p class="card-text">The Akshaya Patra Foundation is an NGO in India headquartered in
+                        Bengaluru. Our organization strives to eliminate classroom hunger by implementing the
+                        Mid-Day Meal Scheme in the government schools and government-aided schools. Alongside,
+                        Akshaya Patra also aims at countering malnutrition and supporting the right to education of
+                        socio-economically disadvantaged children.</p>
+                    <br>
+                    <div class="d-flex align-items-center justify-content-between mt-3 pb-3">
+                        <a href="https://www.akshayapatra.org" class="readmore">
+                            <div class="button">Read More <span class="fas fa-arrow-right"></span></div>
+                        </a>
+                        <div class="d-flex align-items-center justify-content-center mt-3 pb-3">
+                            <div class="button" onclick="window.location.href = '/checkout'">Donate</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Carousel start -->
+            <div class="col-md-5">
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class=""
+                            src="https://www.akshayapatra.org/apadmin/uploads/fundraisingcampaigns/tumb_details_page/10_-_Copy.jpg"
+                            alt="Give India" style="height: 100%; width: 100%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!-- card 6 -->
+
+
+
+
+
+<div class="container py-3 " style="padding-left: 15rem;">
+    <!-- Card Start -->
+    <div class="card">
+        <div class="row ">
+            <div class="col-md-5">
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="" src="https://healinghimalayas.sgp1.digitaloceanspaces.com/public/home/why_him.jpg"
+                            alt="Give Indai" style="height: 16rem; width: 100%;">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-7 px-3">
+                <div class="card-block px-6">
+                    <h4 class="card-title">Healing Himalayas</h4>
+                    <!-- <p class="h-1 mt-4"></p> -->
+                    <p class="card-text">Healing Himalayas was founded, with the intent to preserve the Himalayas and
+                        its natural ecology to make it a perfect abode for its inhabitants. Healing Himalayas works
+                        tirelessly to clean popular treks. Our projects are focused on clean-up drives, waste
+                        management, and other activities in the foothills of the Himalayas.</p>
+                    <br>
+                    <div class="d-flex align-items-center justify-content-between mt-3 pb-3">
+                        <a href="https://healinghimalayas.org/" class="readmore">
+                            <div class="button">Read More <span class="fas fa-arrow-right"></span></div>
+                        </a>
+                        <div class="d-flex align-items-center justify-content-center mt-3 pb-3">
+                            <div class="button" onclick="window.location.href = '/checkout'">Donate</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<!-- card 7 -->
+<div class="container py-3 " style="padding-left: 15rem;">
+<h3 class="ngoSubHeading">Environment Conservation NGO's</h3>
+
+    <!-- Card Start -->
+    <div class="card">
+        <div class="row ">
+
+            <div class="col-md-7 px-3">
+                <div class="card-block px-6">
+                    <h4 class="card-title">Shrusti foundation</h4>
+                    <!-- <p class="h-1 mt-4"></p> -->
+                    <p class="card-text">Shrusti Foundation is a Bangalore-based nonprofit organization that works for
+                        the upliftment of the marginal sections of the Karnataka region. The social welfare community
+                        also aims at educating children coming from unprivileged families. Founded in 2017, this
+                        registered nonprofit organization has its reach in different regions of Bangalore</p>
+                    <br>
+                    <div class="d-flex align-items-center justify-content-between mt-3 pb-3">
+                        <a href="https://shrustifoundation.org/" class="readmore">
+                            <div class="button">Read More <span class="fas fa-arrow-right"></span></div>
+                        </a>
+                        <div class="d-flex align-items-center justify-content-center mt-3 pb-3">
+                            <div class="button" onclick="window.location.href = '/checkout'">Donate</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Carousel start -->
+            <div class="col-md-5">
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class=""
+                            src="https://shrustifoundation.org/wp-content/uploads/elementor/thumbs/IMG-20200427-WA0020-p1nj94vi343p3h7toa7wgo3d2nyahten95mkuwde7g.jpg"
+                            alt="Give Indai" style="height: 100%; width: 70%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- card 8 -->
+
+
+<div class="container py-3 " style="padding-left: 15rem;">
+    <!-- Card Start -->
+    <div class="card">
+        <div class="row ">
+            <div class="col-md-5">
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class=""
+                            src="https://1.bp.blogspot.com/-Cw661oijIO4/YZd8xNLiO2I/AAAAAAAAxDM/O5AcbqLGtOgFiTDA8v3RyM4sBZ3W6ZPBwCLcBGAsYHQ/s1296/cycle.jpg"
+                            alt="Give Indai" style="height: 16rem; width: 100%;">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-7 px-3">
+                <div class="card-block px-6">
+                    <h4 class="card-title">Chintan</h4>
+                    <!-- <p class="h-1 mt-4"></p> -->
+                    <p class="card-text">Chintan is a Delhi-based NGO founded with the intent to reduce waste of all
+                        kinds. This local NGO uses waste as a tool to fight poverty, child labor, gender-based violence,
+                        and climate change while creating green livelihoods.Chintan manages over 30 tons of solid and
+                        electronic waste every day in the Delhi region through doorstep collection, segregation,
+                        recycling, and composting.</p> <br>
+                    <div class="d-flex align-items-center justify-content-between mt-3 pb-3">
+                        <a href="https://www.smilefoundationindia.org" class="readmore">
+                            <div class="button">Read More <span class="fas fa-arrow-right"></span></div>
+                        </a>
+                        <div class="d-flex align-items-center justify-content-center mt-3 pb-3">
+                            <div class="button" onclick="window.location.href = '/checkout'">Donate</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<!-- card 9 -->
+<div class="container py-3 " style="padding-left: 15rem;">
+    <!-- Card Start -->
+    <div class="card">
+        <div class="row ">
+
+
+            <div class="col-md-7 px-3">
+                <div class="card-block px-6">
+                    <h4 class="card-title">smile foundation india</h4>
+                    <!-- <p class="h-1 mt-4"></p> -->
+                    <p class="card-text">Smile Foundation is to empower underprivileged children, youth and
+                        women through relevant education, innovative healthcare and market-focused livelihood
+                        programmes. Smile Foundation is to deploy best possible methodology and technology for
+                        achieving ideal SROI (social return on investment), to practice and promote good governance.</p>
+                    <br>
+                    <div class="d-flex align-items-center justify-content-between mt-3 pb-3">
+                        <a href="https://www.smilefoundationindia.org" class="readmore">
+                            <div class="button">Read More <span class="fas fa-arrow-right"></span></div>
+                        </a>
+                        <div class="d-flex align-items-center justify-content-center mt-3 pb-3">
+                            <div class="button" onclick="window.location.href = '/checkout'">Donate</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-5">
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class=""
+                            src="https://www.smilefoundationindia.org/blog/wp-content/uploads/2023/03/336917167_1241743166745753_5888727292275826396_n-768x512.jpg"
+                            alt="Give Indai" style="height: 16rem; width: 100%;">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- End of card -->
+</div>
+</div>

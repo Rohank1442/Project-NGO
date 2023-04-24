@@ -1,0 +1,219 @@
+<!---From here carousel-->
+<link rel="stylesheet" href="css/page0.css">
+<%- include("header") %>
+<!---From here carousel-->
+<div class="page0">
+    <div class="container-fluid" id="threeCard" style="display: block;">
+        <i class="fa-solid fa-gallery-thumbnails"></i>
+        <div id="carouselExampleIndicators" class="carousel slide carousel-dark mycarousel mycarousel"
+            data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+           </div>
+
+           <div id="container">
+            <h1  class="servicesHeading" id="automatic-typing"></h1>
+          </div>
+       
+            <div class="carousel-inner">
+                <% for (let i = 0; i < ngos.length; i+=3) { %>
+                        <div class="carousel-item <%= i === 0 ? 'active' : '' %>">
+                    <div class="mycontainer conatiner">
+                        <div class="d-lg-flex d-lg-flex-wrap">
+                            <!--Card from here-->
+                            <% for (let j = i; j < i + 3 && j < ngos.length; j++) { %>
+                            <div class="card border-0 me-lg-4 mb-lg-0 mb-4 card_page0">
+                                <div class="backgroundEffect"></div>
+                                <div class="pic"> <img class=""
+                                        src="<%= ngos[j].doc.image %>" alt="Shuddi Ngo">
+
+                                </div>
+                                <div class="content">
+                                    <p class="h-1 mt-4"><%= ngos[j].doc.username %></p>
+                                    <p class="text-muted mt-3"><%= ngos[j].doc.desc %>
+                                    </p>
+                                    <div class="d-flex align-items-center justify-content-between mt-3 pb-3 mybuttons">
+                                        <a href="https://shuddhi.org/" class="readmore">
+                                            <div class="button">Read More <span class="fas fa-arrow-right"></span>
+                                            </div>
+                                        </a>
+                                        <div class="d-flex align-items-center justify-content-center mt-3 pb-3">
+                                            <div class="button"onclick="window.location.href = '/checkout'">Donate</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <% } %>
+
+                            <!--Third-->
+                          
+                        </div>
+                        <!----->
+                    </div>
+                    <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                </div>
+                <% } %>
+                <!--Second Slide-->
+                
+                <!--Third Slide-->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="oneCard" style="display: none;">
+        <i class="fa-solid fa-gallery-thumbnails"></i>
+        <div id="carouselExampleIndicators" class="carousel slide carousel-dark mycarousel mycarousel"
+            data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                    aria-label="Slide 6"></button>
+            </div>
+
+
+
+            <h2 style="margin-left: 19%; margin-top: 10%;">Trending Social Campaigns</h2>
+            <div class="carousel-inner">
+                <% for (let i = 0; i< ngos.length ; i++) { %>
+                <!--First SLide-->
+                <div class="carousel-item <%= i === 0 ? 'active' : '' %>">
+                    <div class="mycontainer conatiner">
+                        <div class="d-lg-flex d-lg-flex-wrap">
+                            <!--Card from here-->
+                            <div class="card border-0 me-lg-4 mb-lg-0 mb-4">
+                                <div class="backgroundEffect"></div>
+                                <div class="pic"> <img class=""
+                                        src="<%= ngos[i].Image_link %>"
+                                        alt="Shuddi Ngo">
+
+                                </div>
+                                <div class="content">
+                                    <p class="h-1 mt-4"><%= ngos[i].Ngo_Name %></p>
+                                    <p class="text-muted mt-3"><%= ngos[i].Disc %>
+                                    </p>
+                                    <div class="d-flex align-items-center justify-content-between mt-3 pb-3 mybuttons">
+                                        <a href="https://shuddhi.org/" class="readmore">
+                                            <div class="button">Read More <span class="fas fa-arrow-right"></span>
+                                            </div>
+                                        </a>
+                                        <div class="d-flex align-items-center justify-content-center mt-3 pb-3">
+                                            <div class="button"  onclick="window.location.href = '/log'">Donate</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              <% } %>
+                
+                <!--Second Slide-->
+             
+             
+                
+                <!--Third Slide-->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<script>
+
+
+
+
+    function displayMenuBar(x) {
+        if (x.matches) {
+            //// 
+            document.getElementById("threeCard").style.display = "none";
+            document.getElementById("oneCard").style.display = "block";
+            /////
+
+        } else {
+            document.getElementById("threeCard").style.display = "block";
+            document.getElementById("oneCard").style.display = "none";
+        }
+    }
+
+    var x = window.matchMedia("(max-width: 1410px)");
+    displayMenuBar(x);
+    x.addListener(displayMenuBar);
+</script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+</script>
+
+
+<script>
+    var text = "Our Trending Social campaigns";
+var punctSlowDownArr = ["!", ".", "?"];
+var newLine = "<br>";
+
+function automaticTyping(){
+  var index = 0;
+  var el = document.getElementById("automatic-typing");
+  typing();
+  function typing() {
+    // If it's the end of the text, return.
+    if (index > text.length - 1)
+      return;
+
+    var char = text.charAt(index);
+    // Verify if we have to continue on a new line. 
+    if(char == "<" && text.substring(index, index + 4) == newLine)
+      {
+        el.innerHTML += newLine;
+        index += 4;
+        // The typing speed is slowed down.
+        setTimeout(typing, Math.floor((Math.random() * 300) + 200));
+      }
+    else
+      {
+        el.innerHTML += char;
+        // The typing speed is slowed down when special punctuation characters are encountered.
+        if (punctSlowDownArr.indexOf(char) > -1) 
+          setTimeout(typing, Math.floor((Math.random() * 250) + 150));
+        else
+          setTimeout(typing, Math.floor((Math.random() * 70) + 30));
+        index++;
+      }
+    }
+  }
+            
+automaticTyping();   
+</script>
