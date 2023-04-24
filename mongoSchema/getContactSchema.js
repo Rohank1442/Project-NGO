@@ -15,6 +15,6 @@ const getContactSchema = new mongoose.Schema({
     },
 });
 
-const User = mongoose.model('', userSchema);
+const User = mongoose.model('getcontact', userSchema);
 
 module.exports = User;
