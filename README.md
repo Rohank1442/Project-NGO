@@ -25,8 +25,8 @@ To run the project, simply navigate to the website URL in your web browser.
 the following commands:
 
 1. npm install
-1. node app.js
-1. Open your web browser and navigate to http://localhost:3000
+1. node app.js -> Backend
+1. npm start -> Frontend
 
 
 **Built With**
@@ -38,9 +38,11 @@ This website was built using the following technologies:
 - JavaScript
 - Bootstrap
 - Node.js
+- React
 - Express.js
 - MongoDB
 - AJAX(fetch)
+- Morgan
 
 
 
@@ -55,14 +57,6 @@ The NGO Marketplace Website includes the following features:
 - Implementation of a rating system to help users identify trustworthy NGOs.
 - Blog management system for users and ngos to post about their charity and thoughts.
 - Report System for User to report a NGO.
-
-`        `**Authors Contribution’s** ->
-
-1. Dhruvraj -> login , register form validation, database management , node.js routing, AJAX(fetch), report system, Admin
-1. Kanishaka Pranjal -> Landing page , Aboutus page, Terms and conditions page , CSS styling, Review and rating system , contact us system.
-1. Swastik Mukati -> Landing page, Ngo page, faqs page, CSS styling, Search realtime ,filter realtime , ajax(fetch)
-1. Rohan -> Landing page, working Payment, Live chat (web socket), CSS styling, blog system(CRUD)
-1. Akash Narvariya -> User page, Contact page,  node.js routing ,footer page, CSS styling , Ngo page page , admin management ,  database management. 
 
 
 
